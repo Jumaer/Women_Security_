@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    tools:context=".views.self_protect.Self_protect">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_margin="5dp"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_knife"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="15dp"
+                    app:cardBackgroundColor="#B0D880"
+                    android:layout_margin="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp" >
+                    <LinearLayout
+                        android:layout_margin="10dp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <ImageView
+                            android:src="@drawable/knife"
+                            android:layout_margin="10dp"
+                            android:layout_width="100dp"
+                            android:layout_height="70dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="30dp"
+                            android:text="Use Something to protect"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textSize="18sp" />
+
+
+                    </LinearLayout>
+
+
+
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_kick"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="15dp"
+                    app:cardBackgroundColor="#B0D880"
+                    android:layout_margin="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp" >
+                    <LinearLayout
+                        android:layout_margin="10dp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <ImageView
+                            android:src="@drawable/punch_mine_done"
+                            android:layout_margin="10dp"
+                            android:layout_width="100dp"
+                            android:layout_height="70dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="30dp"
+                            android:text="Kick and hit to protect"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textSize="18sp" />
+
+
+                    </LinearLayout>
+
+
+
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_shout"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="15dp"
+                    app:cardBackgroundColor="#B0D880"
+                    android:layout_margin="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp" >
+                    <LinearLayout
+                        android:layout_margin="10dp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <ImageView
+                            android:src="@drawable/shout"
+                            android:layout_margin="10dp"
+                            android:layout_width="100dp"
+                            android:layout_height="70dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="30dp"
+                            android:text="Shout and make crowd"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textSize="18sp" />
+
+
+                    </LinearLayout>
+
+
+
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_slap"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="15dp"
+                    app:cardBackgroundColor="#B0D880"
+                    android:layout_margin="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp" >
+                    <LinearLayout
+                        android:layout_margin="10dp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <ImageView
+                            android:src="@drawable/slap"
+                            android:layout_margin="10dp"
+                            android:layout_width="100dp"
+                            android:layout_height="70dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="30dp"
+                            android:text="Punch or slap to protect"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textSize="18sp" />
+
+
+                    </LinearLayout>
+
+
+
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_spray"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="15dp"
+                    app:cardBackgroundColor="#B0D880"
+                    android:layout_margin="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp" >
+                    <LinearLayout
+                        android:layout_margin="10dp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <ImageView
+                            android:src="@drawable/spray"
+                            android:layout_margin="10dp"
+                            android:layout_width="100dp"
+                            android:layout_height="70dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="30dp"
+                            android:text=" Spray can damage eyes"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textSize="18sp" />
+
+
+                    </LinearLayout>
+
+
+
+
+                </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+
+
+
+</RelativeLayout>

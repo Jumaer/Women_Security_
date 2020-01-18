@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+   >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="425dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:background="#FFF"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp">
+
+                <ImageView
+                    android:id="@+id/share_image_victim_criminal"
+
+                    android:layout_marginRight="15dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/sendmailcam"
+
+                    />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <ImageView
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/imageViewProfilePic"
+                        android:layout_width="180dp"
+                        android:layout_height="180dp"
+                        android:src="@drawable/victim" />
+
+
+                </RelativeLayout>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"
+                    android:text="Click for caption on image.."
+                    android:textColor="#B0D880"
+                    android:textSize="21sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                android:elevation="25dp"
+                app:cardCornerRadius="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="295dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <LinearLayout
+                        android:id="@+id/Linear_location"
+                        android:weightSum="5"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:paddingTop="10dp"
+                            android:paddingLeft="9dp"
+                            android:layout_weight="3"
+                            android:textColor="#B0D880"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Ask your friend \nfor help"
+                            android:textSize="15sp" />
+
+                        <ImageView
+                            android:layout_weight="2"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:paddingTop="10dp"
+                            android:src="@drawable/help_from_close"
+                          />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/Linearalarm"
+                        android:weightSum="5"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:paddingTop="10dp"
+                            android:paddingLeft="9dp"
+                            android:layout_weight="3"
+                            android:textColor="#B0D880"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Ask Public\nHelp "
+                            android:textSize="18sp" />
+
+                        <ImageView
+                            android:layout_weight="2"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:paddingTop="10dp"
+                            android:src="@drawable/crowd_help"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/self_protect"
+                        android:weightSum="5"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:paddingTop="10dp"
+                            android:paddingLeft="9dp"
+                            android:layout_weight="3"
+                            android:textColor="#B0D880"
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:text="Self Protect"
+                            android:textSize="15sp" />
+
+                        <ImageView
+                            android:layout_weight="2"
+                            android:layout_width="60dp"
+                            android:layout_height="50dp"
+                            android:paddingTop="2dp"
+                            android:src="@drawable/bestrong"
+                            />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+
+
+
+
+
+        <Button
+            android:paddingLeft="10dp"
+            android:drawableLeft="@drawable/backtopreviousclass"
+            android:id="@+id/Back"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="66dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/designradious"
+            android:text="Back"
+            android:textColor="#F4F7F3"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

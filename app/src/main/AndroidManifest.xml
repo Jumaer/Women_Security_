@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.women.security">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".views.self_protect.Knife"></activity>
+        <activity android:name=".views.self_protect.Spray" />
+        <activity android:name=".views.self_protect.Punch" />
+        <activity android:name=".views.self_protect.Kick" />
+        <activity android:name=".views.self_protect.Scream" />
+        <activity android:name=".views.self_protect.Self_protect" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <activity
+            android:name=".location.screen.GoogleMapsActivity"
+            android:label="@string/title_activity_gps_track" />
+        <activity
+            android:name=".views.SplashActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".views.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".views.SettingsActivity"
+            android:parentActivityName=".views.MainActivity" />
+        <activity
+            android:name=".views.InformationActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".views.Test"
+            android:parentActivityName=".views.MainActivity" />
+        <activity
+            android:name=".views.bot.BotMainActivity"
+            android:parentActivityName=".views.MainActivity" />
+        <activity
+            android:name=".views.CamActivity"
+            android:parentActivityName=".views.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" /> <!-- Service in Android -->
+        <activity
+            android:name=".views.Record"
+            android:parentActivityName=".views.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".views.EmailActivity"
+            android:parentActivityName=".views.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <service android:name=".service.ShakeService" />
+    </application>
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-feature android:name="android.hardware.camera.flash" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission
+        android:name="org.apache.http.legacy"
+        android:required="false" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission
+        android:name="android.hardware.camera2.full"
+        android:required="true" />
+
+    <uses-permission
+        android:name="android.permission.MEDIA_CONTENT_CONTROL"
+        tools:ignore="ProtectedPermissions" />
+
+</manifest>

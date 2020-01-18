@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8sp">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8sp"
+        android:src="@drawable/app_icon"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="17dp"
+        android:layout_marginLeft="16sp"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:text="Test"
+        android:fontFamily="serif"/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Number"
+        android:inputType="number"
+        android:layout_below="@id/txt"
+        android:layout_marginTop="8sp"
+        android:layout_marginLeft="16sp"
+        android:layout_marginRight="16sp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/number"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16sp"
+        android:background="@android:color/holo_green_light"
+        android:text="save"
+        android:textColor="@android:color/white"
+        android:paddingLeft="18sp"
+        android:paddingRight="18sp"/>
+
+</RelativeLayout>

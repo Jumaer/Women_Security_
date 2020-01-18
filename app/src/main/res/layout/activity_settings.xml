@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#f5f5f5">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_gravity="center"
+        android:layout_margin="32sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="6dp">
+        <RelativeLayout
+            android:id="@+id/card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="16sp">
+
+            <RelativeLayout
+                android:id="@+id/police"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4sp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/police_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/police_txt"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    card_view:fontFamily="serif" />
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/police_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/police_txt"
+                    android:text="@string/police_number"
+                    android:layout_marginLeft="12sp"
+                    android:fontFamily="serif"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/black"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/primary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/police"
+                android:layout_marginTop="14sp">
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/primary_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/primary_txt"
+                    android:layout_centerVertical="true"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/black"
+                    android:fontFamily="serif"/>
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/primary_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/num"
+                    android:layout_toRightOf="@id/primary_txt"
+                    android:layout_marginLeft="8sp"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/black"
+                    android:fontFamily="serif"/>
+                <ImageView
+                    android:id="@+id/change_primary"
+                    android:layout_width="32sp"
+                    android:layout_height="32sp"
+                    android:foregroundGravity="center"
+                    android:layout_toRightOf="@id/primary_number"
+                    android:layout_marginLeft="14sp"
+                    android:src="@drawable/settings"
+                    android:layout_centerVertical="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/secondary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/primary"
+                android:layout_marginTop="8sp">
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/secondary_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/secondary_txt"
+                    android:layout_centerVertical="true"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/black"
+                    android:fontFamily="serif"/>
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/secondary_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/secondary_txt"
+                    android:layout_centerVertical="true"
+                    android:text="@string/num"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="8sp" />
+
+                <ImageView
+                    android:id="@+id/change_secondary"
+                    android:layout_width="32sp"
+                    android:layout_height="32sp"
+                    android:layout_toRightOf="@id/secondary_number"
+                    android:layout_marginLeft="14sp"
+                    android:src="@drawable/settings"
+                    android:foregroundGravity="center"
+                    android:layout_centerVertical="true"/>
+            </RelativeLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/msg_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/secondary"
+                android:layout_marginTop="8sp"
+                android:text="Input your Message:"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/msg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/msg_txt"
+                android:layout_marginTop="8sp"
+                android:background="@drawable/shadow_rectangle"
+                android:lines="5"
+                android:hint="I am in danger, help"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/msg_save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="8sp"
+                android:paddingRight="8sp"
+                android:paddingTop="4sp"
+                android:paddingBottom="4sp"
+                android:layout_below="@id/msg"
+                android:layout_marginTop="8sp"
+                android:background="@android:color/holo_red_dark"
+                android:text="Save Message"
+                android:textColor="@android:color/white"
+                android:layout_marginBottom="18sp"/>
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

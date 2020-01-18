@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="#B0D880"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".location.screen.GoogleMapsActivity" >
+
+    <RelativeLayout
+        android:id="@+id/TopSearch"
+        android:background="#B0D880"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <androidx.cardview.widget.CardView
+            android:layout_margin="5dp"
+            map:cardElevation="10dp"
+           map:cardCornerRadius="8dp"
+          map:cardBackgroundColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                    <EditText
+                        android:id="@+id/location_search"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="35dp"
+                        android:hint="Search.."
+                        android:textAllCaps="false"
+                        android:textColor="#B0D880"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                    <ImageView
+                        android:onClick="onClick"
+                        android:id="@+id/search_address"
+                        android:layout_marginRight="8dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="15dp"
+                        android:src="@drawable/search"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+
+
+
+
+
+            </RelativeLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+    <fragment
+        android:layout_above="@id/bottom"
+        android:layout_below="@id/TopSearch"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+      />
+    <RelativeLayout
+        android:id="@+id/bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+
+       <LinearLayout
+           android:background="@color/white"
+           android:orientation="horizontal"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+
+           <ImageView
+               android:onClick="onClick"
+               android:id="@+id/schools_nearby"
+               android:layout_marginLeft="20dp"
+               android:layout_marginRight="8dp"
+               android:layout_marginTop="5dp"
+               android:src="@drawable/school"
+               android:layout_width="40dp"
+               android:layout_height="40dp"/>
+           <ImageView
+               android:onClick="onClick"
+               android:id="@+id/restaurants_nearby"
+               android:layout_marginLeft="8dp"
+               android:layout_marginRight="8dp"
+               android:layout_marginTop="5dp"
+               android:src="@drawable/restaurent"
+               android:layout_width="40dp"
+               android:layout_height="40dp"/>
+           <ImageView
+               android:onClick="onClick"
+               android:id="@+id/hospitals_nearby"
+               android:layout_marginLeft="8dp"
+               android:layout_marginRight="100dp"
+               android:layout_marginTop="5dp"
+               android:src="@drawable/hospital"
+               android:layout_width="40dp"
+               android:layout_height="40dp"/>
+
+
+       </LinearLayout>
+        <ImageView
+            android:visibility="visible"
+            android:layout_alignParentRight="true"
+
+            android:id="@+id/screenshoot"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/screenshoot"
+            android:layout_width="40dp"
+            android:layout_height="40dp"/>
+        <ImageView
+            android:visibility="invisible"
+            android:layout_alignParentRight="true"
+
+            android:id="@+id/screenshoot_send"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/sendmsg_screenshoot"
+            android:layout_width="40dp"
+            android:layout_height="40dp"/>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">Women Security</string>
+    <string name="app_info">Women Security\n(Please Insert Your Information)</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_settings">Settings</string>
+
+    <!--User Name-->
+    <string name="first">Name:Afsana Tajnin Auni\nId:153-15-627</string>
+    <string name="second">Name:Mst Tasmim Sarker Toushy\nId:153-15-623</string>
+    <string name="third">Name: Maliha Kabir Peulee\nId:153-15-620</string>
+    <string name="dev">Design &amp; Developed By</string>
+
+    <!--Settings-->
+    <string name="police_txt"> Police Number: </string>
+    <string name="police_number">01737512549</string>
+    <string name="primary_txt">Number 1: </string>
+    <string name="secondary_txt">Number 2: </string>
+    <string name="num">017</string>
+    <string name="title_activity_gps_track">Map</string>
+
+    <string name="kick">
+
+When someone attacks you in a place where you have no chance to run or to ask for help.
+You have no choice but to fight.Of course the attacker will be more expert in this case so you will have to use your brain when you fight.
+Hit on his pressure points so that even if you get a chance to hit him once u can make that one hit count.</string>
+
+
+    <string name="knife">Nowadays no place is safe. So everyone should have something with them that can be useful in emergency.
+Disguised weapons like the knives showed in the picture can be very useful in emergencies.</string>
+
+    <string name="punch">If the attacker greps you from the front and you can not move your legs you will have to use ur hands to get free.
+Use your hands to punch him. Just punch with all ur might.</string>
+
+    <string name="scream">
+
+If ur in a situation where you cant fight can not run the only choice left for you is to shout just shout as loud as u can.
+it will help u to seek the attention of other people and it will definitely startle the attacker.</string>
+
+    <string name="spray">One of the best weapons you can use in emergency is a pepper spray.
+It is easy to find and you can take it anywhere.But you have to be careful when you use it.
+Keep in mind that it will work the best if you spray it into the attackers eyes or nose.
+Otherwise it wont affect him.But if you can get his eyes or nose a pepper spray can surely be a life saver for anyone.</string>
+</resources>

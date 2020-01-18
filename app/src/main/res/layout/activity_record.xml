@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:textColor="#B0D880"
+            android:layout_marginTop="40dp"
+            android:paddingRight="40dp"
+            android:paddingLeft="40dp"
+            android:textSize="20sp"
+            android:text="You can start recording from here.\nThis is safe and secure. we care, about your privacy..... "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:background="@color/white"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="100dp"
+        android:layout_marginTop="150dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="230dp"
+            android:id="@+id/imageView"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/logo"/>
+
+
+
+        <ImageButton
+            android:visibility="visible"
+            android:background="@color/white"
+           android:src="@drawable/recordmyfinalspecial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_centerHorizontal="true"
+            android:id="@+id/button"
+            android:layout_below="@+id/imageView"
+
+            android:layout_marginTop="57dp"
+            />
+        <ImageButton
+            android:visibility="invisible"
+             android:src="@drawable/recordstopfinaldone"
+            android:background="@color/white"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_centerHorizontal="true"
+            android:id="@+id/button2"
+            android:layout_below="@+id/imageView"
+
+            android:layout_marginTop="58dp"
+
+            />
+
+        <Button
+            android:visibility="invisible"
+            android:textColor="#fff"
+            android:background="@drawable/designradious"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Play"
+            android:id="@+id/button3"
+            android:layout_alignTop="@+id/button2"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            />
+        <Button
+
+            android:visibility="invisible"
+            android:textColor="#fff"
+            android:paddingLeft="8dp"
+            android:paddingRight="10dp"
+            android:background="@drawable/designradious"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stop"
+            android:id="@+id/button4"
+            android:layout_alignTop="@+id/button2"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            />
+        <ImageButton
+
+            android:visibility="invisible"
+            android:src="@drawable/sendmessage"
+            android:background="@color/white"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+           android:id="@+id/Send"
+
+            android:layout_below="@+id/imageView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="57dp"/>
+
+    </RelativeLayout>
+
+
+   <RelativeLayout
+       android:layout_marginBottom="30dp"
+       android:layout_alignParentBottom="true"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginLeft="20dp"
+       android:layout_marginRight="20dp"
+       >
+       <TextView
+           android:id="@+id/textshow1"
+           android:visibility="visible"
+           android:textColor="#B0D880"
+           android:text="Record with the icon "
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"/>
+
+       <TextView
+           android:id="@+id/textshow2"
+           android:visibility="invisible"
+           android:textColor="#B0D880"
+           android:text="Want to check audio?? "
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"/>
+       <TextView
+           android:id="@+id/textshow3"
+           android:visibility="invisible"
+           android:textColor="#B0D880"
+           android:text="You can check.."
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"/>
+       <TextView
+           android:id="@+id/textshow_last"
+           android:visibility="invisible"
+           android:textColor="#B0D880"
+           android:text="You can send.."
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"/>
+
+   </RelativeLayout>
+
+    <TextView
+        android:drawableLeft="@drawable/backtopreviousclass"
+        android:layout_marginBottom="30dp"
+        android:layout_marginRight="12dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:id="@+id/textshow3_back"
+        android:visibility="visible"
+        android:textColor="#B0D880"
+        android:textSize="15sp"
+        android:text="Move Back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>
