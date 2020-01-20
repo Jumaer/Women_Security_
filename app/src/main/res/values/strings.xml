@@ -6,9 +6,10 @@
     <string name="action_settings">Settings</string>
 
     <!--User Name-->
-    <string name="first">Name:Afsana Tajnin Auni\nId:153-15-627</string>
-    <string name="second">Name:Mst Tasmim Sarker Toushy\nId:153-15-623</string>
-    <string name="third">Name: Maliha Kabir Peulee\nId:153-15-620</string>
+    <string name="me">Name:Md.Jumaer Ahamed (Bsc in CSE)</string>
+
+
+
     <string name="dev">Design &amp; Developed By</string>
 
     <!--Settings-->
